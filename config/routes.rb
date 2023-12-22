@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root 'app#index' 
+  root 'root#index'
+  get '/messages/random', to: 'messages#random'
 end

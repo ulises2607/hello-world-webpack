@@ -1,13 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Greeting from './Greeting';
+import Home from './Home';
 
-const App = () => {
-  return (
-    <Router>
-      <Route exact path="/" component={Greeting} />
-    </Router>
-  );
-};
+const App = () => (
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/messages" element={<Greeting />} />
+  </Routes>
+);
 
 export default App;

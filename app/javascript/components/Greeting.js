@@ -1,19 +1,24 @@
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchRandomGreeting } from '../actions/greetingActions';
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchGreeting, randomGreeting } from "../redux/greeting/greetingSlice";
+import { Link } from "react-router-dom";
 
 const Greeting = () => {
   const dispatch = useDispatch();
-  const greeting = useSelector((state) => state.greeting);
+  const greeting = useSelector(randomGreeting);
 
   useEffect(() => {
-    dispatch(fetchRandomGreeting());
+    dispatch(fetchGreeting());
   }, [dispatch]);
 
   return (
-    <div>
-      <h1>{greeting}</h1>
-    </div>
+    <section>
+      <h1>Random Greeting</h1>
+      <h3>{greeting}</h3>
+      <Link to="/">
+        <button>Back to Home</button>
+      </Link>
+    </section>
   );
 };
 

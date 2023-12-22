@@ -3,4 +3,4 @@ class MessagesController < ApplicationController
       @message = Message.order("RANDOM()").first
       render json: { greeting: @message.greetings }
     end
-  end
+end
