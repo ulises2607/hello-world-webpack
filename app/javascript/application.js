@@ -5,16 +5,12 @@ import { Provider } from 'react-redux';
 import store from './redux/store';
 import App from './components/App';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </BrowserRouter>,
-);
-
-
 document.addEventListener('DOMContentLoaded', () => {
-  renderApp();
-  document.addEventListener('turbolinks:load', renderApp); // Add this line
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    <BrowserRouter>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </BrowserRouter>,
+  );
 });

@@ -4,10 +4,12 @@ import Greeting from './Greeting';
 import Home from './Home';
 
 const App = () => (
-  <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/messages" element={<Greeting />} />
-  </Routes>
+  <Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/messages" element={<Greeting />} />
+    </Routes>
+</Router>
 );
 
 export default App;
