@@ -5,10 +5,6 @@ export const fetchGreeting = createAsyncThunk(
   'greeting/fetchGreeting',
   async () => {
     const response = await axios.get('/messages/random');
-<<<<<<< HEAD
-=======
-    console.log(response.data.greeting);
->>>>>>> origin/display-greetings
     return response.data.greeting;
   }
 );
