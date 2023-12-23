@@ -13,4 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
       </Provider>
     </BrowserRouter>,
   );
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> origin/display-greetings
