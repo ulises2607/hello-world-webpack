@@ -4,8 +4,7 @@ import axios from 'axios';
 export const fetchGreeting = createAsyncThunk(
   'greeting/fetchGreeting',
   async () => {
-    const response = await axios.get('/messages/api-random');
-    console.log(response.data.greeting);
+    const response = await axios.get('/messages/random');
     return response.data.greeting;
   }
 );
