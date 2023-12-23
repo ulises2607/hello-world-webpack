@@ -34,6 +34,11 @@
 
 ## 🛠 Built With <a name="built-with"></a>
 
+- Ruby on Rails
+- Postgres
+- React
+- Redux
+
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
@@ -77,6 +82,16 @@ Clone this repository to your desired folder:
 ```sh
   cd my-folder
   git clone git@github.com:ulises2607/hello-world-webpack.git
+```
+
+### Install
+Install this project with:
+```sh
+  bundle install
+  npm install
+  rails db:create
+  rails db:migrate
+  rails db:seed
 ```
 
 ### Usage
