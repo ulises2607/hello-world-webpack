@@ -76,7 +76,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:hajnaloltyan/hello-rails-react.git
+  git clone git@github.com:ulises2607/hello-world-webpack.git
 ```
 
 ### Usage
